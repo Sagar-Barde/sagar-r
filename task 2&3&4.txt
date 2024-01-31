@@ -1,0 +1,90 @@
+name sagar Barde
+
+
+ task 1
+
+const markMass=55;
+const markHeight=60;
+const johnMass=45;
+const johnHeight=50;
+const markBmi =markMass / (markHeight ** 2);
+console.log(markBmi);
+const johnBmi =johnMass / (johnHeight ** 2);
+console.log(johnBmi);
+const markHigherBmi = (markBmi>johnBmi);
+console.log(markHigherBmi);
+
+
+
+out put
+0.015277777777777777
+index2.js:8 0.018
+index2.js:10 false
+
+
+
+task  4
+const bil1 =275;
+const tip =(bil1 >=50 && bil1 <=300)? bil1*0.15:bil1*0.2
+ console.log(' Enter The bill was ' +bil1);
+ console.log(' Enter The tip was ' +tip);
+console.log(' Enter The total was' +tip+bil1);
+
+ 
+
+
+out put
+
+your bill was 275
+index4.js:4 your tip was 41.25
+index4.js:5 your total was41.25275
+
+
+
+
+task  3
+
+
+const dolphinScore1 = 45;
+const dolphinScore2 = 100;
+const dolphinScore3 = 98;
+const koalasScore1 = 10;
+const koalasScore2 = 115;
+const koalasScore3 = 23;
+
+const dolphinAverage = ((dolphinScore1 + dolphinScore2 + dolphinScore3) / 3);
+console.log(`Average score  Dolphin team ${dolphinAverage}`);
+
+const koalasAverage = ((koalasScore1 + koalasScore2 + koalasScore3) / 3);
+console.log(`Average score  Koalas team ${koalasAverage}`);
+
+if (dolphinScore1 <= 100 && koalasScore1 <= 100 && dolphinScore2 <= 100 && koalasScore2 <= 100 && dolphinScore3 <= 100 && koalasScore3) {
+    console.log('Both teams are disqualified!!');
+}
+else {
+    if (dolphinScore1 >= 100 && koalasScore1 >= 100 && dolphinScore2 >= 100 && koalasScore2 >= 100 && dolphinScore3 >= 100 && koalasScore3 >= 100) {
+        console.log('dolphin  win!!');
+    }
+    else {
+        if (dolphinScore1 == koalasScore1 && dolphinScore2 == koalasScore2 && dolphinScore3 == koalasScore3) {
+            console.log(' draw!!');
+        }
+        else {
+            console.log('Koalas  win!!');
+        }
+    }
+}
+
+
+
+
+out put
+
+Average score  Dolphin team 81
+index3.js:12 Average score  Koalas team 49.333333333333336
+index3.js:26 Koalas  win!!
+275
+
+
+
+

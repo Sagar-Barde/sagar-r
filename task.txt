@@ -1,0 +1,61 @@
+ task 
+
+const bill =[125,555,44];
+const total =[];
+const tips =[];
+let x=0; y=0;z=0;
+function  clacTip (x,y){
+ for(let i=1; i<=3;i++){
+if(bill >= 50 &&  bill <=300){
+    tips[y] =(bill[x] *15) / 100;
+    total [z] =bill [x] + bill[y];
+}
+else{
+    tips [y] =(bill[x] * 20) / 100;
+    total [z] =bill [x] + bill[y];
+    x++,y++,z++;
+}
+}
+};
+clacTip(x,y);
+console.log(`first bill=${total[0]},second bill=${total[1]},thired bill=${total[2]}`);
+
+out put
+
+first bill=1110,second bill=88,thired bill=undefined
+
+
+task
+
+const dolphinScore1 = 77;
+const dolphinScore2 = 100;
+const dolphinScore3 = 91;
+const koalasScore1 = 89;
+const koalasScore2 = 75;
+const koalasScore3 = 113;
+
+const calcAverage=(a,b,c)=>(a+b+c)/3;
+console.log(`Dolphin team avg ${calcAverage(44,23,71)}`);
+const avgDolphin=calcAverage(44,23,71);
+const avgKoalas=calcAverage(65,54,49);
+console.log(` koalas team avg ${calcAverage(65,54,49)}`);
+
+const checkWinner=(avgDolphin,avgKoalas)=>{
+    if(avgDolphin>=2*avgKoalas)
+    {
+        console.log("Dolphins team are win");
+    }
+    else{
+        if(avgDolphin>=2*avgKoalas)
+        {console.log("Koalas team are win");}
+    else
+    {
+        console.log("No one win");
+    }
+    }
+
+out put
+
+Dolphin team avg 46
+koalas team avg 56
+No one win
